@@ -7,7 +7,7 @@ This project demonstrates the complete lifecycle of building, fine-tuning, and d
 ## Model Implementation & Performance
 
 - **Efficient Local Fine-Tuning:**  
-  Fine-tuned Llama-2 7B models on high-quality instruction datasets (Alpaca, Self-Instruct) using consumer-grade GPUs and memory-efficient quantization (QLoRA 4-bit).
+  Fine-tuned Llama-2 7B model on high-quality instruction datasets (Alpaca, Self-Instruct) using consumer-grade GPUs and memory-efficient quantization (QLoRA 4-bit).
 
 - **End-to-End MLOps Pipeline:**  
   Implemented reproducible data versioning (DVC), experiment tracking (MLflow/wandb), and workflow orchestration (Makefile/Prefect).
@@ -103,5 +103,3 @@ Apache 2.0 License.
 Contributions are welcome! Please see the `CONTRIBUTING.md` file for guidelines on how to get started.
 
 This project is designed as a portfolio showcase for end-to-end LLM fine-tuning, benchmarking, and automated cloud inference deployment—demonstrating real-world, production-ready AI engineering and MLOps skills.
-
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/23713451/16606456-e114-4cc0-b980-e4caa0c12e03/README.md
