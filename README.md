@@ -31,11 +31,48 @@ This project demonstrates the complete lifecycle of building, fine-tuning, and d
 - Cloud-agnostic, scalable inference with a user-friendly Streamlit interface.
 - Resume-ready, production-grade codebase demonstrating advanced MLOps, cloud, and AI engineering skills.
 
-### Hugging Face Model Card
+## Tech Stack
 
-The fine-tuned models are versioned and published on Hugging Face Hub with detailed model cards and evaluation metrics, enabling easy collaboration and reproducibility.
+| Stage              | Local Implementation                        | Cloud Implementation (AWS/GCP)     |
+|--------------------|---------------------------------------------|------------------------------------|
+| Model Training     | Llama-2 7B/Mistral 7B, QLoRA, Axolotl       | N/A                                |
+| Experiment Tracking| MLflow, wandb                               | N/A                                |
+| Data Versioning    | DVC                                         | N/A                                |
+| Model Registry     | Hugging Face Hub                            | Hugging Face Hub                   |
+| Inference          | llama.cpp, Ollama, LM Studio                | SageMaker/Vertex AI/K8s API        |
+| Web UI             | Streamlit                                   | Streamlit (containerized)          |
+| Orchestration      | Makefile, Prefect, Airflow                  | Terraform, Helm, Kubernetes        |
 
-## One-Click Cloud Deployment
+## Implementation Highlights
+
+### 1. Local Fine-Tuning & Testing
+
+- Versioned and preprocessed instruction datasets with DVC.
+- Downloaded and quantized Llama-2 7B/Mistral 7B to enable training on 10GB VRAM GPUs.
+- Fine-tuned models using Axolotl/Unsloth, tracked experiments in MLflow/wandb.
+- Evaluated and tested models locally using llama.cpp and Ollama for real-world prompts.
+
+### 2. Model Versioning & Sharing
+
+- Packaged and documented models with model cards and evaluation results.
+- Published models to Hugging Face Hub with version tags for reproducibility and collaboration.
+
+### 3. Automated Cloud Deployment
+
+- Containerized both the inference backend and Streamlit UI.
+- Developed Terraform modules for provisioning EKS (AWS) and GKE (GCP) clusters, networking, and storage.
+- Created Kubernetes manifests and Helm charts for seamless deployment.
+- Integrated cloud-native monitoring and provided easy teardown scripts.
+- Enabled one-click deployment from the GitHub README, empowering users to launch their own scalable inference endpoints and web UIs on their cloud accounts.
+
+## Results
+
+- **Instruction-tuned LLMs** ready for real-world tasks: summarization, Q&A, rewriting, code generation, translation, and more.
+- **Fully reproducible pipeline** from data to deployment, with all artifacts and configurations versioned.
+- **Cloud-native, user-owned inference** with zero resource sharing and transparent cost control.
+- **Streamlit UI** for easy interaction and demonstration of model capabilities.
+
+## Deployment
 
 **Deploy to your own cloud account with a single click:**
 
