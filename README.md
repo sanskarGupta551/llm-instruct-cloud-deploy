@@ -1,10 +1,8 @@
 # llm-instruct-cloud-deploy
 
-# LLM Instruct Cloud Deploy
-
 **Train locally, deploy anywhere.**
 
-A complete, open-source workflow for instruction-tuning large language models (LLMs) on your own hardware, versioning them on Hugging Face, and enabling one-click, user-owned cloud deployment (GCP or AWS) with a Streamlit UI.
+> A complete, open-source workflow for instruction-tuning large language models (LLMs) on your own hardware, versioning them on Hugging Face, and enabling one-click, user-owned cloud deployment (GCP or AWS) with a Streamlit UI.
 
 ---
 
