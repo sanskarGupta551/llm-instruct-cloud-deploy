@@ -1,6 +1,5 @@
 # llm-instruct-cloud-deploy
 
-```markdown
 # LLM Instruct Cloud Deploy
 
 **Train locally, deploy anywhere.**
@@ -133,4 +132,3 @@ Pull requests, issues, and suggestions are welcome!
 - Hugging Face, Axolotl, Unsloth, LLaMA Factory
 - Streamlit, Terraform, Kubernetes
 
-```
