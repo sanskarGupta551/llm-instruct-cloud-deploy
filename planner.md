@@ -21,7 +21,7 @@ This guide details a robust, reproducible workflow for:
    - Download Alpaca/Self-Instruct dataset.
    - Preprocess and version using DVC for reproducibility.
 2. **Model Setup**
-   - Download Llama-2 7B or Mistral 7B from Hugging Face.
+   - Download Llama-2 7B from Hugging Face.
    - Prepare quantized weights (QLoRA 4-bit) to fit local GPU memory.
 3. **Fine-Tuning**
    - Use Axolotl/Unsloth/LLaMA Factory for LoRA/QLoRA instruction tuning.

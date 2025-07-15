@@ -35,7 +35,7 @@ This project demonstrates the complete lifecycle of building, fine-tuning, and d
 
 | Stage              | Local Implementation                        | Cloud Implementation (AWS/GCP)     |
 |--------------------|---------------------------------------------|------------------------------------|
-| Model Training     | Llama-2 7B/Mistral 7B, QLoRA, Axolotl       | N/A                                |
+| Model Training     | Llama-2 7B, QLoRA, Axolotl                  | N/A                                |
 | Experiment Tracking| MLflow, wandb                               | N/A                                |
 | Data Versioning    | DVC                                         | N/A                                |
 | Model Registry     | Hugging Face Hub                            | Hugging Face Hub                   |
@@ -48,7 +48,7 @@ This project demonstrates the complete lifecycle of building, fine-tuning, and d
 ### 1. Local Fine-Tuning & Testing
 
 - Versioned and preprocessed instruction datasets with DVC.
-- Downloaded and quantized Llama-2 7B/Mistral 7B to enable training on 10GB VRAM GPUs.
+- Downloaded and quantized Llama-2 7B to enable training on 10GB VRAM GPUs.
 - Fine-tuned models using Axolotl/Unsloth, tracked experiments in MLflow/wandb.
 - Evaluated and tested models locally using llama.cpp and Ollama for real-world prompts.
 
@@ -65,14 +65,16 @@ This project demonstrates the complete lifecycle of building, fine-tuning, and d
 - Integrated cloud-native monitoring and provided easy teardown scripts.
 - Enabled one-click deployment from the GitHub README, empowering users to launch their own scalable inference endpoints and web UIs on their cloud accounts.
 
-## Results
+## LLM Benchmarks
+
+## Project Results
 
 - **Instruction-tuned LLMs** ready for real-world tasks: summarization, Q&A, rewriting, code generation, translation, and more.
 - **Fully reproducible pipeline** from data to deployment, with all artifacts and configurations versioned.
 - **Cloud-native, user-owned inference** with zero resource sharing and transparent cost control.
 - **Streamlit UI** for easy interaction and demonstration of model capabilities.
 
-## Deployment
+## Cloud Deployment
 
 **Deploy to your own cloud account with a single click:**
 
